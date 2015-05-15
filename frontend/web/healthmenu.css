@@ -1,0 +1,1072 @@
+/*============================================
+
+Nuxion jQuery by SONHLAB.com - version 1.0
+Website: http://sonhlab.com
+Documentation: http://docs.sonhlab.com/nuxion-jquery-responsive-ux-navigation-menu/
+
+Build - 0032
+============================================*/
+
+
+
+/*========== START NUXION jQuery ==========*/
+.nuxion {
+	position:relative;
+	padding:0;
+	margin:0px auto;
+}
+
+.nuxion > .nav-mainmenu {
+	position:relative;
+}
+
+
+.nav-mainitem {
+	color:inherit;
+	display:block;
+	visibility:hidden;
+	cursor:pointer;
+	
+	margin:0;
+	padding:0;
+}
+
+
+
+/* Start More Menu */
+.nav-mainmenu > .nav-moremenu {
+	position:absolute;
+	right:0; 
+	background: #ffffff;
+
+}
+
+.nav-mainmenu > .nav-moremenu-on {
+	position:absolute;
+	right:0; 
+	background: #7C858E;
+
+}
+
+
+
+.nav-moremenu > .nav-moreitem {
+	cursor:pointer;
+	margin:0;
+	padding:0;
+	color: inherit;
+	position:relative;
+}
+
+.nuxion > .nav-mainmenu > .nav-stackeditem {
+	/*display:none;*/
+}
+
+.nav-moremenu > .nav-stackeditemcontainer {
+	display:none;
+	position:absolute;
+	padding:20px 0;
+	z-index:9998;
+	right:0;
+}
+
+
+.nav-stackedsub-header {
+	cursor:pointer;
+	height:48px;
+	display:block;
+	overflow:hidden;
+
+	/* Start Shadow */
+	box-shadow: 0 5px 30px -10px #333;
+	-moz-box-shadow: 0 5px 30px -10px #333;
+	-webkit-box-shadow: 0 5px 30px -10px #333;
+	/* End Shadow */
+
+}
+
+
+
+.nav-stackedsub-header > span > img {
+	height:32px;
+}
+.nav-stackedsub-header > .nav-icon {
+	height:48px;
+	padding: 0 8px;
+}
+.nav-stackedsub-header > .nav-icon > i {
+	font-size:32px;
+}
+
+.nav-stackedsub-header > .nav-returnbt {
+	padding:0 10px;
+	font-size:48px;
+	display:inline-block;
+	height:48px;
+	line-height:48px;
+	float:left;
+}
+.nav-stackedsub-header > .nav-title {
+	font-size:16px;
+	display:inline-block;
+	height:48px;
+	line-height:48px;
+}
+/* End More Menu */
+
+
+
+
+
+/*===== Start Main Menu - Large Style =====*/
+.nav-largesize {
+	height:140px;
+	background: url("images/bg_arrow.png");
+  background-repeat: repeat-x;
+}
+
+.nav-largesize .nav-mainitem,
+.nav-largesize .nav-moreitem {
+	height:120px;
+	width:136px;
+	overflow:hidden;
+	display: table;
+	position:relative;
+}
+.nav-largesize .nav-mainitem > .nav-icon,
+.nav-largesize .nav-moreitem > .nav-icon {
+	height:80px;
+	width:80px;
+	display:block;
+	margin:0 auto;
+	position:absolute;
+	top:0px;
+	left:30px;
+}
+.nav-largesize .nav-mainitem > .nav-icon > img,
+.nav-largesize .nav-moreitem > .nav-icon > img {
+	width:80px;
+	height:80px;
+	display:block;
+	border:0;
+}
+
+.nav-largesize .nav-mainitem > .nav-icon > i,
+.nav-largesize .nav-moreitem > .nav-icon > i {
+	font-size:48px;
+	/*width:48px;*/
+	height:48px;
+	display:block;
+	text-align:center;
+	margin-top:30px;
+}
+.nav-largesize .nav-mainitem > .nav-title,
+.nav-largesize .nav-moreitem > .nav-title {
+	display:table-cell;
+	text-align:center;
+	height:90px;
+	width:140px;
+	font-size:16px;
+	overflow:hidden;
+	position:relative;
+	vertical-align:bottom;
+	padding-bottom:12px;
+}
+
+/*===== End Main Menu - Large Style =====*/
+
+
+
+/*===== Start Main Menu - Medium Style =====*/
+.nav-medsize {
+	height:48px;
+}
+
+.nav-medsize .nav-mainitem,
+.nav-medsize .nav-moreitem {
+	height:48px;
+	line-height:48px;
+	padding:0 12px;
+}
+
+.nav-medsize .nav-mainitem > span ~ span,
+.nav-medsize .nav-moreitem > span ~ span
+{ margin-left:12px; }
+
+.nav-medsize .nav-mainitem > .nav-icon,
+.nav-medsize .nav-moreitem > .nav-icon {
+	display:block;
+	height:48px;
+	width:24px;
+	float:left;
+}
+.nav-medsize .nav-mainitem > .nav-icon > img,
+.nav-medsize .nav-moreitem > .nav-icon > img {
+	height:24px;
+	position:relative;
+	top:12px;
+	float:left;
+}
+
+.nav-medsize .nav-mainitem > .nav-icon > i,
+.nav-medsize .nav-moreitem > .nav-icon > i {
+	font-size:24px;
+	line-height:48px;
+}
+.nav-medsize .nav-mainitem > .nav-title,
+.nav-medsize .nav-moreitem > .nav-title {
+	float:left;
+	display:block;
+}
+
+
+
+/*===== End Main Menu - Medium Style =====*/
+
+
+
+/*===== Start Main Menu - Small Style =====*/
+.nav-smallsize {
+	height:34px;
+}
+
+.nav-smallsize .nav-mainitem,
+.nav-smallsize .nav-moreitem {
+	height:34px;
+	line-height:34px;
+	padding:0 10px;
+}
+
+.nav-smallsize .nav-mainitem > span ~ span,
+.nav-smallsize .nav-moreitem > span ~ span
+{ margin-left:10px; }
+
+.nav-smallsize .nav-mainitem > .nav-icon,
+.nav-smallsize .nav-moreitem > .nav-icon {
+	display:block;
+	height:34px;
+	float:left;
+}
+.nav-smallsize .nav-mainitem > .nav-icon > img,
+.nav-smallsize .nav-moreitem > .nav-icon > img {
+	height:14px;
+	position:relative;
+	top:10px;
+	float:left;
+}
+
+.nav-smallsize .nav-mainitem > .nav-icon > i,
+.nav-smallsize .nav-moreitem > .nav-icon > i {
+	font-size:14px;
+	line-height:24px;
+}
+.nav-smallsize .nav-mainitem > .nav-title,
+.nav-smallsize .nav-moreitem > .nav-title {
+	float:left;
+	display:block;
+}
+
+
+/*===== End Main Menu - Small Style =====*/
+
+
+
+
+/*========== END NUXION jQuery ==========*/
+
+
+
+
+/*============================================
+
+Nuxion by SONHLAB.com - version 1.0
+Website: http://sonhlab.com
+Documentation: http://docs.sonhlab.com/nuxion-jquery-responsive-ux-navigation-menu/
+
+Build - 0031
+============================================*/
+
+
+
+/*===== Start SubMenu Station =====*/
+.nav-substation {
+	position:relative;
+	display:block;
+}
+
+.nav-submenu {
+	display:none;
+}
+
+.nav-submenu-content {
+	padding: 20px;
+}
+
+.nav-sub-container h1,
+.nav-sub-container h2,
+.nav-sub-container h3,
+.nav-sub-container h4,
+.nav-sub-container h5,
+.nav-sub-container h6 {
+	padding:0;
+	margin:0;
+	font-family:"Dosis",sans-serif;
+	font-weight:normal;
+	overflow:hidden;
+	text-transform:uppercase;
+}
+.nav-sub-container h1 { font-size:44px; height:50px; line-height:50px; }
+.nav-sub-container h2 { font-size:34px; height:40px; line-height:40px; }
+.nav-sub-container h3 { font-size:26px; height:30px; line-height:30px; }
+.nav-sub-container h4 { font-size:20px; height:24px; line-height:24px; }
+.nav-sub-container h5 { font-size:16px; height:20px; line-height:20px; }
+.nav-sub-container h6 { font-size:14px; height:16px; line-height:16px; }
+
+.nav-sub-container h3 > span {
+	height:26px;
+	display:block;
+	text-transform:capitalize;
+}
+.nav-sub-container p ~ p { padding-top:20px; }
+.nav-sub-container p {
+	line-height:1.5;
+	font-size:14px;
+}
+
+
+.nav-submenu-content > div ~ div { margin-left:20px; }
+
+
+.nav-sub-container ul {
+	margin:0;
+	padding:0;
+}
+.nav-sub-container ul li {
+	list-style:none;
+	margin:0;
+	position:relative;
+}
+.nav-sub-container ul li a {
+	display:block;
+	color:inherit;
+}
+.nav-sub-container ul li a > span ~ span { margin-left:10px; }
+
+
+
+.nav-active {
+	color: #fff !important;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0D83DD, 0 0 40px #0D83DD;	
+}
+
+.nav-active-2 {
+	color: #fff !important;
+	background: #2C84EE;
+}
+
+.nav-active-3 {
+	color: #fff !important;
+	background: #FF6600;
+}
+
+/* Start Hover Effects For Main Bar */
+.nav-hover-bluelight,
+.nav-hover-greenlight,
+.nav-hover-redlight,
+.nav-hover-solidblue {
+	transition-property: text-shadow, color, background;
+	transition-duration: 0.5s, 0.5s, 0.5s;
+}
+.nav-hover-bluelight:hover {
+	color: #fff !important;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0D83DD, 0 0 30px #0D83DD;
+}
+.nav-hover-greenlight:hover {
+	color: #fff !important;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #67B239, 0 0 40px #67B239;
+}
+.nav-hover-redlight:hover {
+	color: #fff !important;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #E51400, 0 0 40px #E51400;
+}
+
+.nav-hover-solidblue:hover {
+	background: #2C84EE;
+}
+
+/* End Hover Effects For Main Bar */
+
+
+
+
+
+
+
+/* Start SubMenu - Metro Style - List Small Size */
+.sub-list-small {
+	margin:10px 0 !important;
+}
+.sub-list-small li a,
+.sub-list-small li .nav-lvl-item {
+	height:34px;
+	line-height:34px;
+	font-size:14px;
+	padding:0 10px;
+	cursor:pointer;
+}
+
+.sub-list-small li > a > span ~ span,
+.sub-list-small li > .nav-lvl-item > span ~ span {
+	margin-left:10px;
+}
+.sub-list-small li > a > span {
+	height:34px;
+	line-height:34px;
+	display:block;
+	float:left;
+	max-width:195px;
+}
+.sub-list-small li > a > span > img {
+	height:14px;
+}
+/* End SubMenu - Metro Style - List Small Size */
+
+
+
+
+
+.nav-col-1 { width:685px; }
+.nav-col-2 { width:450px; }
+.nav-col-3 { width:293px; }
+.nav-col-4 { width:215px; }
+.nav-col-1, .nav-col-2, .nav-col-3, .nav-col-4 {
+	float:left;
+	overflow:hidden;
+}
+
+
+.nav-sub-container .list-title {
+	font-size:22px;
+	margin:10px;
+}
+
+/* Start Layouts */
+.nav-fix-960 {
+	width:960px;
+	margin:auto;
+}
+.nav-fluid {
+	width:100%;
+}
+/* End Layouts */
+
+
+
+
+/* Shopping Cart */
+.nav-cart { margin-top:20px; }
+.nav-cart-header {
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #111;
+	height:20px;
+}
+.nav-cart-detail {
+	position:relative;
+	height:20px;
+	padding-bottom:10px;
+}
+.nav-cart-header > span { font-weight:bold; }
+.nav-cart-header > span,
+.nav-cart-detail > span {
+	display:block;
+	float:left;
+	overflow:hidden;
+	height:20px;
+	line-height:20px;
+	position:relative;
+}
+.nav-cart-header > span ~ span,
+.nav-cart-detail > span ~ span {
+	padding-left:10px;
+}
+.nav-cart-item-no {
+	width:50px;
+	text-align:right;
+}
+.nav-cart-item-name { width:200px; }
+.nav-cart-item-qty { width:50px; }
+.nav-cart-item-note { width:220px; }
+.nav-cart-item-price { width:100px; }
+.nav-cart-item-rm {
+	cursor:pointer;
+	width:15px;
+	text-align:center;
+}
+.nav-cart-sum > div {
+	height:20px;
+	margin-bottom:5px;
+}
+.nav-cart-sum > div > span {
+	display:block;
+	float:left;
+	width:100px;
+}
+.nav-cart-sum > div > span ~ span {
+	margin-left:15px;
+	text-align:right;
+}
+.nav-cart-sum > .nav-cart-total > span {
+	font-weight:bold;
+}
+
+.nav-cart-checkout {
+	margin-top:20px;
+	padding:10px 0;
+	text-align:center;
+	cursor:pointer;
+}
+.nav-cart-checkout > a > span { font-size:20px; }
+/* End Shopping Cart */
+
+
+
+
+/* Start Login Form */
+.nav-loginform {
+	margin: 20px 0;
+}
+
+.nav-loginform > label {
+	font-size:16px;
+	height:20px;
+	line-height:20px;
+	position:relative;
+	margin-left:10px;
+	top:-40px;
+	z-index:9998;
+	
+}
+
+.nav-loginform > input[type=text],
+.nav-loginform > input[type=password] {
+	width:96%;
+	padding:10px 2% 10px 2%;
+	display:block;
+	margin-bottom:10px;
+	font-size:16px;
+	height:20px;
+	line-height:20px;
+	position:relative;
+	background-color: #333;
+}
+.nav-loginform > input[type=text] {
+	
+}
+.nav-login-user {
+	background:url(../images/demo/login-user.png) no-repeat right center;
+}
+.nav-login-password {
+	background:url(../images/demo/login-key.png) no-repeat right center;
+}
+.nav-loginform > input[type=password] {
+	
+}
+.nav-loginform > input[type=submit] {
+	width:100%;
+	font-size:16px;
+	height:40px;
+	line-height:40px;
+	position:relative;
+	display:block;
+	cursor:pointer;
+	margin-bottom:10px
+}
+.nav-loginform > input[type=submit]:hover {
+	font-weight:bold;
+}
+.nav-login-new > a { font-weight:bold;}
+.nav-login-forgot {
+	text-align:right;
+}
+.nav-login-forgot > a:hover,
+.nav-login-new > a:hover { text-decoration:underline; }
+
+
+.nav-loginform > input:focus { 
+	background: #333 !important;
+	z-index:9999 !important;
+}
+/* End Login Form */
+
+
+
+/* Start Contact Form */
+.nav-contactform > div ~ div { margin-top:10px; }
+.nav-contactform > div { padding:0 10px; }
+.nav-contactform input[type=text] {
+	width:96%;
+	padding:2%;
+	margin-bottom:10px;
+	height:34px;
+	line-height:34px;
+	font-size:14px;
+	display:block;
+	font-family: 'Dosis', sans-serif;
+}
+.nav-contactform textarea {
+	width:96%;
+	padding:2%;
+	margin-bottom:10px;
+	height:200px;
+	font-size:14px;
+	line-height:1.5;
+	font-family: 'Open Sans', sans-serif;
+	border:0px;
+	display:block;
+	overflow:hidden;
+}
+.nav-contactform .nav-submitbt {
+	padding:10px;
+	height:20px;
+	display:block;
+	cursor:pointer;
+}
+
+.nav-contactform .nav-submitbt > span {
+	font-size:14px;
+	height:20px;
+	line-height:20px;
+	display:block;
+	float:left;
+}
+.nav-contactform .nav-submitbt > span > i { font-size:20px; }
+
+/*
+.nav-contactform .nav-submitbt:hover > span > i,
+.nav-contactform .nav-submitbt:hover > span > img { opacity:0.5; }
+*/
+
+.nav-contactform .nav-submitbt > span > img { height:20px; }
+.nav-contactform .nav-submitbt > span ~ span { margin-left:10px; }
+/* End Contact Form */
+
+
+/* Start Social Buttons */
+.nav-socialbt {
+	width:24px;
+	height:24px;
+	display:block;
+	text-align:center;
+	padding:12px;
+	cursor:pointer;
+}
+.nav-socialbt > img,
+.nav-socialbt > i {
+	height:24px;
+	width:24px;
+}
+.nav-socialbt > i { font-size:24px; }
+/* End Social Buttons */
+
+
+
+.nav-img-fullwidth { width:100%; }
+
+.nav-metrobt {
+	padding:10px;
+	height:20px;
+	display:inline-block;
+	cursor:pointer;
+}
+.nav-metrobt > span {
+	font-size:14px;
+	height:20px;
+	line-height:20px;
+	display:block;
+	float:left;
+}
+.nav-metrobt > span > i { font-size:20px; }
+.nav-metrobt:hover > span > i,
+.nav-metrobt:hover > span > img { opacity:0.5; }
+.nav-metrobt > span > img { height:20px; }
+.nav-metrobt > span ~ span { margin-left:10px; }
+
+
+.image-ribbon {
+	height:auto;
+	width:100%;
+	padding:0px;
+	margin:20px 0px;
+	padding-top:10px;
+}
+.image-items {
+	float:left;
+	height:60px;
+	width:100px;
+	margin:0px 0px 10px 10px;
+}
+.image-ribbon > .image-items ~ .image-items {
+	/*padding:10px 0px 10px 10px;*/
+}
+
+
+
+.nav-avatar {
+	width:64px;
+	margin-right:9px;
+	float:left;
+}
+.nav-avatar > img {
+	width:64px;
+	height:64px;
+}
+.nav-feed-content {
+	width:220px;
+	text-align:justify;
+	float:left;
+}
+
+
+
+/* Start Table */
+.nav-table, .nav-table tr, .nav-table td {
+	border:0px;
+	line-height:1;
+}
+.nav-table td {
+	
+}
+
+.center-align {
+	text-align:center;
+}
+.nav-table td > p {
+	font-size:14px;
+	line-height:22px;
+	word-spacing:normal;
+	padding:0 20px;
+}
+
+.list-circle {
+	/*list-style: disc !important;*/
+	list-style-type:circle !important;
+	margin:10px 10px 10px 30px !important;
+}
+.list-circle > li {
+	list-style-type:circle !important;
+}
+
+/* End Table */
+
+
+@media screen and (max-width:959px) {
+
+	.nav-fix-960 {
+		width:100%;
+	}
+
+	/* Start Columns */
+	.nav-col-1,.nav-col-2,.nav-col-3,.nav-col-4 { width:100%; }
+	/* End Columns */
+	
+	
+	.nav-submenu-content > div ~ div {
+		margin:20px 0 0 0 !important;
+	}
+	
+	
+	
+	.nav-feed-content {
+		width:auto;
+		float:none;
+	}
+	
+	
+	/* Start Shopping Cart */
+	.nav-cart-header {
+		display:none;
+	}
+
+	.nav-cart-detail {
+		height:100px;
+		width:100%;
+		padding:0;
+		margin-bottom:10px;
+		background:#2C84EE;
+		color:#fff;
+	}
+
+	.nav-cart-detail > span {
+		display:block;
+		position:absolute;
+		overflow:hidden;
+		height:auto;
+		line-height:15px;
+		font-size:12px;
+		padding:0 !important;
+	}
+
+	.nav-cart-item-no {
+		width:auto;
+		height:15px !important;
+		left:5px;
+		top:5px;
+	}
+	.nav-cart-item-name {
+		width:90%;
+		height:30px !important;
+		line-height:30px !important;
+		font-size:20px !important;
+		top:20px;
+		left:5px;
+	}
+	.nav-cart-item-qty {
+		width:auto;
+		bottom:5px;
+		left:5px;
+		height:15px !important;
+	}
+	.nav-cart-item-qty:before {
+		content:"Qty: ";
+	}
+	.nav-cart-item-note {
+		width:auto;
+		height:30px !important;
+		line-height:15px !important;
+		top:50px;
+		left:5px;
+	}
+	.nav-cart-item-price {
+		width:auto;
+		bottom:5px;
+		right:5px;
+		height:15px !important;
+	}
+	.nav-cart-item-rm {
+		right:5px;
+		top:5px;
+		height:15px !important;
+	}
+	/* End Shopping Cart */
+	
+	
+	
+	/* Start Login Form */
+	.nav-loginform > input[type=text],
+	.nav-loginform > input[type=password]	{
+		width:96%;
+		padding:10px 2% 10px 2%;
+	}
+	.nav-loginform > input[type=text]:focus,
+	.nav-loginform > input[type=password]:focus {
+		background: rgba(245,245,245,0.2); 
+	}
+	.nav-loginform > input[type=submit] {
+		width:100%;
+	}
+	/* End Login Form */
+	
+
+
+}
+
+/*===== Start SubMenu Station =====*/
+
+/*============================================
+
+CSS Base by SONHLAB.com - version 1.0
+Website: http://sonhlab.com
+
+============================================*/
+
+
+
+
+/*========== START SHADOW LIST ==========*/
+.shadow-white,
+.shadow-black,
+.shadow-blue,
+.shadow-green,
+.shadow-red,
+.shadow-orange {
+	text-decoration:none;
+}
+.shadow-white {
+	box-shadow:0px 0px 6px 3px #fff;
+	-webkit-box-shadow:0px 0px 6px 3px #fff;
+	-moz-box-shadow:0px 0px 6px 3px #fff;
+	-o-box-shadow:0px 0px 6px 3px #fff;
+	-ms-box-shadow:0px 0px 6px 3px #fff;
+}
+.shadow-blue {
+	box-shadow:0px 0px 6px 3px #38D1F7;
+	-webkit-box-shadow:0px 0px 6px 3px #38D1F7;
+	-moz-box-shadow:0px 0px 6px 3px #38D1F7;
+	-o-box-shadow:0px 0px 6px 3px #38D1F7;
+	-ms-box-shadow:0px 0px 6px 3px #38D1F7;
+}
+.shadow-green {
+	box-shadow:0px 0px 6px 3px #AACA37;
+	-webkit-box-shadow:0px 0px 6px 3px #AACA37;
+	-moz-box-shadow:0px 0px 6px 3px #AACA37;
+	-o-box-shadow:0px 0px 6px 3px #AACA37;
+	-ms-box-shadow:0px 0px 6px 3px #AACA37;
+}
+.shadow-red {
+	box-shadow:0px 0px 6px 3px #E81750;
+	-webkit-box-shadow:0px 0px 6px 3px #E81750;
+	-moz-box-shadow:0px 0px 6px 3px #E81750;
+	-o-box-shadow:0px 0px 6px 3px #E81750;
+	-ms-box-shadow:0px 0px 6px 3px #E81750;
+}
+.shadow-black {
+	box-shadow:0px 0px 6px 3px #444;
+	-webkit-box-shadow:0px 0px 6px 3px #444;
+	-moz-box-shadow:0px 0px 6px 3px #444;
+	-o-box-shadow:0px 0px 6px 3px #444;
+	-ms-box-shadow:0px 0px 6px 3px #444;
+}
+.shadow-orange {
+	box-shadow:0px 0px 6px 3px #FF6600;
+	-webkit-box-shadow:0px 0px 6px 3px #FF6600;
+	-moz-box-shadow:0px 0px 6px 3px #FF6600;
+	-o-box-shadow:0px 0px 6px 3px #FF6600;
+	-ms-box-shadow:0px 0px 6px 3px #FF6600;
+}
+
+/*========== END SHADOW LIST ==========*/
+
+
+/*========== START HOVER SHADOW LIST ==========*/
+
+.hovershadow-white, .hovershadow-black, .hovershadow-blue, .hovershadow-green, .hovershadow-red, .hovershadow-orange {
+	text-decoration:none;
+}
+.hovershadow-white:hover {
+	box-shadow:0px 0px 6px 3px #fff;
+	-webkit-box-shadow:0px 0px 6px 3px #fff;
+	-moz-box-shadow:0px 0px 6px 3px #fff;
+	-o-box-shadow:0px 0px 6px 3px #fff;
+	-ms-box-shadow:0px 0px 6px 3px #fff;
+}
+.hovershadow-blue:hover {
+	box-shadow:0px 0px 6px 3px #38D1F7;
+	-webkit-box-shadow:0px 0px 6px 3px #38D1F7;
+	-moz-box-shadow:0px 0px 6px 3px #38D1F7;
+	-o-box-shadow:0px 0px 6px 3px #38D1F7;
+	-ms-box-shadow:0px 0px 6px 3px #38D1F7;
+}
+.hovershadow-green:hover {
+	box-shadow:0px 0px 6px 3px #AACA37;
+	-webkit-box-shadow:0px 0px 6px 3px #AACA37;
+	-moz-box-shadow:0px 0px 6px 3px #AACA37;
+	-o-box-shadow:0px 0px 6px 3px #AACA37;
+	-ms-box-shadow:0px 0px 6px 3px #AACA37;
+}
+.hovershadow-red:hover {
+	box-shadow:0px 0px 6px 3px #E81750;
+	-webkit-box-shadow:0px 0px 6px 3px #E81750;
+	-moz-box-shadow:0px 0px 6px 3px #E81750;
+	-o-box-shadow:0px 0px 6px 3px #E81750;
+	-ms-box-shadow:0px 0px 6px 3px #E81750;
+}
+.hovershadow-black:hover {
+	box-shadow:0px 0px 6px 3px #444;
+	-webkit-box-shadow:0px 0px 6px 3px #444;
+	-moz-box-shadow:0px 0px 6px 3px #444;
+	-o-box-shadow:0px 0px 6px 3px #444;
+	-ms-box-shadow:0px 0px 6px 3px #444;
+}
+.hovershadow-orange:hover {
+	box-shadow:0px 0px 6px 3px #FF6600;
+	-webkit-box-shadow:0px 0px 6px 3px #FF6600;
+	-moz-box-shadow:0px 0px 6px 3px #FF6600;
+	-o-box-shadow:0px 0px 6px 3px #FF6600;
+	-ms-box-shadow:0px 0px 6px 3px #FF6600;
+}
+
+/*========== END HOVER SHADOW LIST ==========*/
+
+
+
+/*========== START BACKGROUND LIST ==========*/
+
+/* Solid Colors */
+.solid-blue { background:#00BBE2; }
+.solid-blue-2 { background:#2C84EE; }
+
+.solid-violetred { background:#781766; }
+.solid-red { background:#E51400;}
+.solid-red-2 { background:#E81750; }
+.solid-pink { background:#FF539B; }
+.solid-purple { background:#D02090; }
+.solid-orange { background:#FB8F02; }
+.solid-orange-2 { background:#FF6600; }
+.solid-orange-3 { background:#DD5F37; }
+.solid-coral { background:#CD5B45; }
+
+.solid-green { background:#67B239; }
+.solid-green-2 {background:#96BF01; }
+
+.solid-olive { background:#999900}
+.solid-grass { background:#CDCD00; }
+
+.solid-gold { background:#FEE9AE; }
+.solid-yellow { background:#F7D100; }
+.solid-black { background:#000; }
+.solid-smoke { background:#F5F5F5; }
+.solid-white { background:#fff; }
+.solid-jade { background:#00CE9B; }
+
+.solid-darkblue { background:#044E94; }
+.solid-darkgreen { background:#016C38; }
+.solid-darkred { background:#5F0000; }
+
+.solid-lightblue { background:#E4F0F7; }
+.solid-lightgreen { background:#F5FFFA; }
+/* End Solid Colors */
+
+/* Transparent Colors */
+.transparent-jade { background: rgba(0,206,155,0.2); }
+.transparent-deepsea { background: rgba(0,53,100,0.2); }
+.transparent-smoke { background: #F8F8F8; }
+.transparent-grass { background: rgba(205,250,0,0.2); }
+.transparent-black { background: rgba(0,0,0,0.2); }
+.transparent-darknight { background: rgba(0,0,0,0.6); }
+.transparent-red { background: rgba(255,0,0,0.2); }
+.transparent-violetred { background: rgba(208,32,144,0.2); }
+.transparent-green { background: rgba(103,178,57,0.2); }
+.transparent-yellow { background: rgba(255,255,0,0.2); }
+.transparent-orange { background: rgba(251,143,2,0.2); }
+.transparent-coral { background: rgba(205,91,69,0.2); }
+.transparent-wheat { background: rgba(238,216,174,0.2); }
+.transparent-redwine { background: rgba(139,0,0,0.2); }
+.transparent-mist { background: rgba(255,255,255,0.6); }
+/* End Transparent Colors */
+
+/* Background Images */
+.img-wood { background:#FB8F02 url(../images/bg/wood_pattern.jpg) repeat; }
+.img-purtywood { background:#FB8F02 url(../images/bg/purty_wood.jpg) repeat; }
+.img-woodtexture { background:#FB8F02 url(../images/bg/wood_texture.jpg) repeat; }
+.img-darkwood { background:#000 url(../images/bg/dark_wood.jpg) repeat; }
+.img-retinawood { background:#7C858E; }
+.img-nastyfabric { background:#999 url(../images/bg/nasty_fabric.png) repeat; }
+.img-wildoliva { background:#555 url(../images/bg/wild_oliva.png) repeat; }
+.img-darkbrick { background:#555 url(../images/bg/dark_brick_wall.png) repeat; }
+.img-navyblue { background:#555 url(../images/bg/navy_blue.png) repeat; }
+.img-brickwall { background:#ccc url(../images/bg/brickwall.png) repeat; }
+/* End Background Images */
+
+/*========== END BACKGROUND LIST ==========*/
+
+
+
+/* MISC */
+.clearspace { clear: both; }
+.floatleft { float:left !important; }
+.floatright { float:right !important; }
+.none { display:none !important; }
+.light-text { color:#fff; }
+.dark-text { color:#1e1e1e; }
+.semiblack-text { color: #333; }
